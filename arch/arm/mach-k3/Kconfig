@@ -10,6 +10,15 @@ config SOC_K3_AM625
 config SOC_K3_AM62A7
 	bool "TI's K3 based AM62A7 SoC Family Support"
 
+config SOC_K3_AM62L3
+	bool "TI's K3 based AM62L3 SoC Family Support"
+	select CLK_SCMI
+	select SPL_CLK_SCMI
+	select SCMI_FIRMWARE
+	select SCMI_POWER_DOMAIN
+	select SPL_SCMI_POWER_DOMAIN
+	select SYSRESET_PSCI
+
 config SOC_K3_AM62P5
 	bool "TI's K3 based AM62P5 SoC Family Support"
 
@@ -81,11 +90,9 @@ config SYS_K3_BOOT_PARAM_TABLE_INDEX
 	default 0x41cffbfc if SOC_K3_J721E || SOC_K3_J7200
 	default 0x41cfdbfc if SOC_K3_J721S2 || SOC_K3_J784S4
 	default 0x701bebfc if SOC_K3_AM642
-	default 0x43c3f290 if SOC_K3_AM625
+	default 0x43c3f290 if SOC_K3_AM625 || SOC_K3_AM62L3 || SOC_K3_AM62P5 || SOC_K3_J722S
 	default 0x43c3f290 if SOC_K3_AM62A7 && CPU_V7R
 	default 0x7000f290 if SOC_K3_AM62A7 && ARM64
-	default 0x43c4f290 if SOC_K3_AM62P5
-	default 0x43c7f290 if SOC_K3_J722S
 	help
 	  Address at which ROM stores the value which determines if SPL
 	  is booted up by primary boot media or secondary boot media.
@@ -124,7 +131,7 @@ config K3_EARLY_CONS_IDX
 
 config K3_ATF_LOAD_ADDR
 	hex "Load address of ATF image"
-	default 0x80000000 if (SOC_K3_AM625 || SOC_K3_AM62A7 || SOC_K3_AM62P5 || SOC_K3_J722S)
+	default 0x80000000 if (SOC_K3_AM625 || SOC_K3_AM62A7 || SOC_K3_AM62P5 || SOC_K3_J722S || SOC_K3_AM62L3)
 	default 0x70000000
 	help
 	  The load address for the ATF image. This value is used to build the
@@ -133,6 +140,7 @@ config K3_ATF_LOAD_ADDR
 config K3_ATF_RESERVED_SIZE
 	hex "Reserved memory size for ATF"
 	default 0x80000 if (SOC_K3_AM625 || SOC_K3_AM62A7 || SOC_K3_AM62P5 || SOC_K3_J722S)
+	default 0x200000 if SOC_K3_AM62L3
 	default 0x20000
 	help
 	  The runtime memory size reserved for ATF. This value is used to fixup the
@@ -206,6 +214,7 @@ source "arch/arm/mach-k3/am65x/Kconfig"
 source "arch/arm/mach-k3/am64x/Kconfig"
 source "arch/arm/mach-k3/am62x/Kconfig"
 source "arch/arm/mach-k3/am62ax/Kconfig"
+source "arch/arm/mach-k3/am62lx/Kconfig"
 source "arch/arm/mach-k3/am62px/Kconfig"
 source "arch/arm/mach-k3/j721e/Kconfig"
 source "arch/arm/mach-k3/j7200/Kconfig"
