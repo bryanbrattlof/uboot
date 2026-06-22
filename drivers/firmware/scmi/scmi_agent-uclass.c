@@ -437,7 +437,7 @@ static int scmi_bind_protocols(struct udevice *dev)
 	/* initialize the device from device tree */
 	drv = DM_DRIVER_GET(scmi_base_drv);
 	name = "scmi-base.0";
-	ret = device_bind(dev, drv, name, NULL, ofnode_null(), &proto);
+	ret = device_bind(dev, drv, name, NULL, dev_ofnode(dev), &proto);
 	if (ret) {
 		dev_err(dev, "failed to bind base protocol\n");
 		return ret;
