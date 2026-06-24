@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="62.236744mm"
+   height="59.627434mm"
+   viewBox="0 0 62.236744 59.627435"
+   version="1.1"
+   id="svg51133"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs51130">
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-4" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-2" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-2-2" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-2-2-8" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-6" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-2-2-8-3" />
+    <rect
+       x="20.016691"
+       y="45.512157"
+       width="194.45363"
+       height="67.070183"
+       id="rect79831-2-2-8-3-9" />
+  </defs>
+  <rect
+     style="fill:#dbe4f4;fill-opacity:1;stroke:#8166b3;stroke-width:0.255676;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect51238"
+     width="61.981068"
+     height="59.371758"
+     x="0.127838"
+     y="0.127838"
+     ry="8.4550943"
+     rx="8.4550943" />
+  <rect
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.195943;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect51478"
+     width="48.173313"
+     height="13.032638"
+     x="6.9406586"
+     y="25.645071"
+     ry="0" />
+  <rect
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.195943;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect51478-8"
+     width="48.173313"
+     height="13.032638"
+     x="6.9406586"
+     y="12.612433"
+     ry="0" />
+  <rect
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.195884;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect51478-9"
+     width="48.161327"
+     height="13.02805"
+     x="6.9406586"
+     y="38.677708"
+     ry="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:none;stroke-width:0.264583"
+     x="20.700148"
+     y="8.0392199"
+     id="text53682"><tspan
+       id="tspan53680"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611px;font-family:Helvetica;-inkscape-font-specification:Helvetica;stroke-width:0.264583"
+       x="20.700148"
+       y="8.0392199">u-boot.img</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,0.52922115,17.991727)"
+     id="text79829"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:none;text-align:center;white-space:pre;shape-inside:url(#rect79831);display:inline"
+     x="56.255871"
+     y="0"><tspan
+       x="92.724136"
+       y="60.311719"
+       id="tspan1">U-Boot</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,0.17050215,5.2860127)"
+     id="text79829-8"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:none;text-align:center;white-space:pre;shape-inside:url(#rect79831-6);display:inline"
+     x="56.255871"
+     y="0"><tspan
+       x="77.404114"
+       y="60.311719"
+       id="tspan2">FIT Header</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,-0.09333885,30.89743)"
+     id="text79829-6"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:none;text-align:center;white-space:pre;shape-inside:url(#rect79831-2);display:inline"
+     x="56.255871"
+     y="0"><tspan
+       x="74.772141"
+       y="60.311719"
+       id="tspan3">U-Boot DTB</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,-0.98424885,17.372407)"
+     id="text79829-2"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:Helvetica;font-variant-ligatures:none;text-align:center;white-space:pre;shape-inside:url(#rect79831-4);display:inline"
+     x="56.255871"
+     y="0" />
+</svg>
