@@ -466,25 +466,29 @@ choose any configuration at runtime to boot from.
 
 .. code-block:: dts
 
-    /dts-v1/;
+   / {
+       description = "FIT Image description";
+       #address-cells = <1>;
 
-    / {
-        description = "FIT Image description";
-        #address-cells = <1>;
+       images {
+           image-1 {};
+           image-2 {};
+           fdt-1 {};
+           fdt-2 {};
+       };
 
-        images {
-            [image-1]
-            [image-2]
-            [fdt-1]
-            [fdt-2]
-        }
-
-        configurations {
-            default = <conf-1>
-            [conf-1: image-1,fdt-1]
-            [conf-2: image-2,fdt-1]
-        }
-    }
+       configurations {
+           default = <conf-1>
+           conf-1 {
+               image = "image-1";
+               fdt = "fdt-1";
+           };
+           conf-2 {
+                image = "image-2";
+                fdt = "fdt-1";
+           };
+       };
+   };
 
 * Sample Images
 
